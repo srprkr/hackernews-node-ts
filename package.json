@@ -10,15 +10,19 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "devDependencies": {
     "@types/node": "22.10.1",
     "cross-env": "7.0.3",
     "prettier": "3.4.2",
-    "tsx": "4.19.2",
+    "prisma": "^7.10.0",
+    "tsx": "^4.23.13",
     "typescript": "5.7.2"
   },
   "dependencies": {
+    "@prisma/adapter-better-sqlite3": "^7.10.0",
+    "@prisma/client": "^7.10.0",
+    "better-sqlite3": "^13.0.3",
     "graphql": "^16.10.0",
     "graphql-yoga": "^5.10.4"
   }
