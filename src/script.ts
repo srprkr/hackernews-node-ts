@@ -1,10 +1,12 @@
+import "dotenv/config"
+
 // 1
 // after (Prisma 7)
 import { PrismaClient } from '@prisma/client'
 import { PrismaBetterSqlite3 } from '@prisma/adapter-better-sqlite3'
 
 // 2
-const adapter = new PrismaBetterSqlite3({ url: 'file:./prisma/dev.db' })
+const adapter = new PrismaBetterSqlite3({ url: process.env.DATABASE_URL! })
 const prisma = new PrismaClient({ adapter })
 
 // 3
