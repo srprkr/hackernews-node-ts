@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development tsx watch src/main.ts",
-    "start": "tsx src/main.ts"
+    "start": "tsx src/main.ts",
+    "studio": "prisma studio --url file://$PWD/prisma/dev.db"
+
   },
   "keywords": [],
   "author": "",
